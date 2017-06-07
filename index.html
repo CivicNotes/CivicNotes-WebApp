@@ -1,4 +1,5 @@
 <!DOCTYPE HTML>
+<!-- sdr.stanford.edu -->
 <html>
 
 <head>
@@ -7,6 +8,9 @@
   <link rel="icon" type="image/png" href="./assets/images/quill.png" sizes="16x16" />
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Roboto+Slab|Pacifico" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css" type="text/css"/>
+  <script src="js/form.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -14,12 +18,13 @@
       <h2> Palo Alto <h2>
       <h1 class="title"> Civic Notefinder </h1>
     <form id='search'>
-      <input type="text" id="query-input" placeholder="Palo Alto" />
+      <input type="text" id="query-input" placeholder="Palo Alto" value = "Palo Alto"/>
       <input type="submit" id="submit" value="Search" />
-      <!-- prevent default -->
     </form>
   </header>
 
-  <div id="results" class="hidden">results</div>
+  <div id="results" class="hidden">
+    <h1> Results </h1>
+  </div>
 </body>
 </html>
